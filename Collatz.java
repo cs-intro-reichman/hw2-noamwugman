@@ -2,13 +2,15 @@
 public class Collatz {
 	public static void main(String args[]) {
 		int i = Integer.parseInt(args[0]);
-		int current = i;
-		for (int counter = 0; counter < i; counter++) {
-			String str = "" + current;
-			if (current % 2 == 0) {
-				current = current / 2;
+		for (int counter = 1; counter <= i; counter++) {
+			int startNumber = counter;
+			int currentNumber = counter;
+			while (currentNumber != 1) {
+				
+				if (currentNumber % 2 == 0)
+					currentNumber = currentNumber / 2;
+				else currentNumber = 3 * currentNumber + 1;
 			}
-			else current = current * 3 + 1;
 		}
 	}
 }
