@@ -7,9 +7,9 @@ public class CalcPi {
 		double deno = 1; // holds the last denominator (מכנה) that was added/subtracted
 		while (counter < i) {
 			if ((counter) % 2 == 0) {
-				piCalc = piCalc + (1 / (deno + 2));
+				piCalc = piCalc + (1 / deno);
 			}
-			else piCalc = piCalc - (1 / (deno + 2));
+			else piCalc = piCalc - (1 / deno);
 			deno = deno + 2;
 			counter++;
 		}
