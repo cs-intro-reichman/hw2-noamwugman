@@ -22,8 +22,9 @@ public class Cheers {
                 index++;
             }
             index = 0;
+            int i = Integer.parseInt(args[1]);
             System.out.println("What does that spell?");
-            while (index < Integer.parseInt(args[1])) {
+            while (index < i) {
                 System.out.println(str + "!!!");
                 index++;
             }

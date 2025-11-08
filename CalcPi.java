@@ -6,7 +6,7 @@ public class CalcPi {
 		double piCalc = 1;
 		double deno = 1; // holds the last denominator (מכנה) that was added/subtracted
 		while (counter <= i) {
-			if ((counter) % 2 == 1) {
+			if ((counter) % 2 == 0) {
 				piCalc = piCalc + (1 / (deno + 2));
 			}
 			else piCalc = piCalc - (1 / (deno + 2));
