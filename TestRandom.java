@@ -2,17 +2,15 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 		int times = Integer.parseInt(args[0]);
-		int counter = 0;
 		double rnd;
 		int bigger = 0;
 		int smaller = 0;
-		while (counter < times) {
+		for (int counter = 0; counter < times; counter++) {
 			rnd = Math.random();
 			if (rnd > 0.5) {
 				bigger++;
 			}
 			else smaller++;
-			counter++;
 		}
 		System.out.println("> 0.5:" + bigger + " times");
 		System.out.println("<= 0.5: " + smaller + " times");
